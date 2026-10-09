@@ -6,6 +6,9 @@
 <title>Mert Karaca | Industrial Engineering Student</title>
 <meta name="description" content="Portfolio of Mert Karaca, industrial engineering student focused on treasury, financial modeling, simulation and operations planning.">
 <link rel="stylesheet" href="style.css">
+<script>
+  try { if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark'); } catch (e) {}
+</script>
 </head>
 <body id="top">
 
@@ -25,23 +28,30 @@
 <main>
 
 <section class="hero">
-  <h1>Mert Karaca</h1>
+  <p class="eyebrow">Industrial Engineering · Treasury · Simulation</p>
+  <h1>Hi, I'm <span class="grad">Mert Karaca</span></h1>
   <p class="lead">Industrial engineering student who builds Monte Carlo and simulation models for treasury liquidity, inventory and operations problems.</p>
   <p class="buttons">
-    <a class="btn" href="assets/Mert_Karaca_CV.pdf">Download CV</a>
+    <a class="btn" href="Mert_Karaca_CV.pdf">Download CV</a>
     <a class="btn ghost" href="#projects">See projects</a>
     <a class="btn ghost" href="https://github.com/mertkaraca04-cyber">GitHub</a>
-    <a class="btn ghost" href="LINKEDIN_URL_HERE">LinkedIn</a>
+    <!-- LinkedIn: add later as <a class="btn ghost" href="YOUR_LINKEDIN_URL">LinkedIn</a> -->
   </p>
+  <div class="stats">
+    <div class="stat"><b>2</b><span>Internships: bank treasury and manufacturing planning</span></div>
+    <div class="stat"><b>10,000</b><span>Monte Carlo scenarios in my liquidity model</span></div>
+    <div class="stat"><b>53</b><span>Months of CBRT deposit data analyzed</span></div>
+    <div class="stat"><b>2027</b><span>Expected graduation, Yaşar University</span></div>
+  </div>
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
   <h2>About</h2>
   <p>I am a final-year industrial engineering student at Yaşar University, graduating in 2027. I have interned in bank treasury and balance sheet management and in manufacturing planning, and I like turning uncertain data into a clear, quantified recommendation, using Excel, Python and simulation tools.</p>
   <p>I am looking for a role in treasury, balance sheet management, financial modeling or operations planning.</p>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
   <h2>Projects</h2>
 
   <article class="card">
@@ -107,74 +117,79 @@
   </article>
 </section>
 
-<section id="experience">
+<section id="experience" class="reveal">
   <h2>Experience</h2>
-
-  <article class="item">
-    <p class="meta">Jul 2026 to Aug 2026</p>
-    <h3>Treasury / Balance Sheet Management Intern</h3>
-    <p class="org">Akbank T.A.Ş., Istanbul</p>
-    <ul>
-      <li>Calculated daily swap rates to support TL and foreign currency liquidity management.</li>
-      <li>Tracked bond yields and market data on Bloomberg Terminal.</li>
-      <li>Followed daily TL and FX cash position tracking, closing and funding within the liquidity team.</li>
-      <li>Followed daily ALM pricing decisions on branch loan and deposit requests.</li>
-      <li>Helped review market reports and data tables prepared for morning management meetings.</li>
-    </ul>
-  </article>
-
-  <article class="item">
-    <p class="meta">Jul 2025 to Aug 2025</p>
-    <h3>Planning Department Intern</h3>
-    <p class="org">Doğu İklimlendirme</p>
-    <ul>
-      <li>Analyzed ERP data flows to understand production planning on the shop floor.</li>
-      <li>Collected, analyzed and reported daily operational data for the planning team.</li>
-      <li>Supported OPEX (Operational Excellence) process improvement through data collection.</li>
-      <li>Updated operation times and planning parameters used in routine planning decisions.</li>
-    </ul>
-  </article>
+  <div class="timeline">
+    <article class="item">
+      <p class="meta">Jul 2026 to Aug 2026</p>
+      <h3>Treasury / Balance Sheet Management Intern</h3>
+      <p class="org">Akbank T.A.Ş., Istanbul</p>
+      <ul>
+        <li>Calculated daily swap rates to support TL and foreign currency liquidity management.</li>
+        <li>Tracked bond yields and market data on Bloomberg Terminal.</li>
+        <li>Followed daily TL and FX cash position tracking, closing and funding within the liquidity team.</li>
+        <li>Followed daily ALM pricing decisions on branch loan and deposit requests.</li>
+        <li>Helped review market reports and data tables prepared for morning management meetings.</li>
+      </ul>
+    </article>
+    <article class="item">
+      <p class="meta">Jul 2025 to Aug 2025</p>
+      <h3>Planning Department Intern</h3>
+      <p class="org">Doğu İklimlendirme</p>
+      <ul>
+        <li>Analyzed ERP data flows to understand production planning on the shop floor.</li>
+        <li>Collected, analyzed and reported daily operational data for the planning team.</li>
+        <li>Supported OPEX (Operational Excellence) process improvement through data collection.</li>
+        <li>Updated operation times and planning parameters used in routine planning decisions.</li>
+      </ul>
+    </article>
+  </div>
 </section>
 
-<section id="education">
+<section id="education" class="reveal">
   <h2>Education</h2>
-  <article class="item">
-    <p class="meta">2022 to 2027 (expected)</p>
-    <h3>B.Sc. Industrial Engineering</h3>
-    <p class="org">Yaşar University, İzmir</p>
-  </article>
-  <article class="item">
-    <p class="meta">2018 to 2022</p>
-    <h3>Konak Anadolu Lisesi</h3>
-    <p class="org">İzmir</p>
-  </article>
+  <div class="timeline">
+    <article class="item">
+      <p class="meta">2022 to 2027 (expected)</p>
+      <h3>B.Sc. Industrial Engineering</h3>
+      <p class="org">Yaşar University, İzmir</p>
+    </article>
+    <article class="item">
+      <p class="meta">2018 to 2022</p>
+      <h3>Konak Anadolu Lisesi</h3>
+      <p class="org">İzmir</p>
+    </article>
+  </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
   <h2>Skills</h2>
-  <dl>
-    <dt>Programming and data</dt><dd>Python, SQL, Microsoft Excel, Machine Learning (introductory)</dd>
-    <dt>Finance and treasury</dt><dd>Liquidity management, Asset-Liability Management (ALM), swap pricing, bond market analysis, financial modeling</dd>
-    <dt>Methods</dt><dd>Monte Carlo simulation, Newsvendor model, inventory management, discrete-event simulation, Chi-Square testing, NPW/IRR analysis</dd>
-    <dt>Tools</dt><dd>Bloomberg Terminal, Arena Simulation, ERP systems</dd>
-    <dt>Languages</dt><dd>Turkish (native), English (B2), Spanish (A1)</dd>
-  </dl>
-  <h3>Certifications</h3>
-  <ul>
-    <li>ISO 9001 Quality Management Systems Training, KalDer (2026)</li>
-    <li>Microsoft Excel: Beginner to Advanced, Udemy (2025)</li>
-    <li>Digital Financial Literacy Training, Habitat Association (2024)</li>
-  </ul>
+  <div class="skills">
+    <div class="skill"><h4>Programming and data</h4><div class="chips"><span>Python</span><span>SQL</span><span>Microsoft Excel</span><span>Machine Learning (intro)</span></div></div>
+    <div class="skill"><h4>Finance and treasury</h4><div class="chips"><span>Liquidity management</span><span>ALM</span><span>Swap pricing</span><span>Bond market analysis</span><span>Financial modeling</span></div></div>
+    <div class="skill"><h4>Methods</h4><div class="chips"><span>Monte Carlo simulation</span><span>Newsvendor model</span><span>Inventory management</span><span>Discrete-event simulation</span><span>Chi-Square testing</span><span>NPW / IRR</span></div></div>
+    <div class="skill"><h4>Tools</h4><div class="chips"><span>Bloomberg Terminal</span><span>Arena Simulation</span><span>ERP systems</span></div></div>
+    <div class="skill"><h4>Languages</h4><div class="chips"><span>Turkish (native)</span><span>English (B2)</span><span>Spanish (A1)</span></div></div>
+  </div>
+  <div class="certs">
+    <h3>Certifications</h3>
+    <ul>
+      <li>ISO 9001 Quality Management Systems Training, KalDer (2026)</li>
+      <li>Microsoft Excel: Beginner to Advanced, Udemy (2025)</li>
+      <li>Digital Financial Literacy Training, Habitat Association (2024)</li>
+    </ul>
+  </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <h2>Contact</h2>
-  <p>For internship or job opportunities, or questions about my projects, email me.</p>
-  <p>
-    <a href="mailto:mertkaraca04@gmail.com">mertkaraca04@gmail.com</a><br>
-    <a href="LINKEDIN_URL_HERE">LinkedIn</a><br>
-    <a href="https://github.com/mertkaraca">github.com/mertkaraca</a>
-  </p>
+  <div class="contact-card">
+    <p>For internship or job opportunities, or questions about my projects, email me.</p>
+    <p>
+      <a href="mailto:mertkaraca04@gmail.com">mertkaraca04@gmail.com</a><br>
+      <a href="https://github.com/mertkaraca04-cyber">github.com/mertkaraca04-cyber</a>
+    </p>
+  </div>
 </section>
 
 </main>
@@ -184,12 +199,20 @@
 <script>
   var btn = document.getElementById('theme-toggle');
   var root = document.documentElement;
-  if (localStorage.getItem('theme') === 'dark') { root.classList.add('dark'); btn.textContent = 'Light mode'; }
+  function label() { btn.textContent = root.classList.contains('dark') ? 'Light mode' : 'Dark mode'; }
+  label();
   btn.addEventListener('click', function () {
     var dark = root.classList.toggle('dark');
-    btn.textContent = dark ? 'Light mode' : 'Dark mode';
-    localStorage.setItem('theme', dark ? 'dark' : 'light');
+    label();
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
   });
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  } else { els.forEach(function (el) { el.classList.add('show'); }); }
 </script>
 </body>
 </html>
