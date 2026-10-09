@@ -35,6 +35,7 @@ h3{margin:0 0 4px;font-size:1.12rem}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:34px}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
 .stat b{display:block;font-size:1.5rem;color:var(--accent)}
+.stat b.txt{font-size:1.02rem;line-height:1.35;margin-bottom:2px}
 .stat span{color:var(--muted);font-size:.85rem}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;margin-bottom:20px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
 .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--accent),var(--accent2))}
